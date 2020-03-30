@@ -2,7 +2,7 @@ const express = require('express');
 const routes = require('./routes');
 const cors = require('cors');
 
-const app = express(cors()); // serve para segurar quem poderá assesar essa api, como estamos em desenvolvimento, pode ficra só assim, que ai qualquer lugar do localhost pode acessar (front)
+const app = express(); // serve para segurar quem poderá assesar essa api, como estamos em desenvolvimento, pode ficra só assim, que ai qualquer lugar do localhost pode acessar (front)
 
 /**
  * Se estivessemos em produção, seria importante definir no cors quem poderia acessar essa api, que no caso é o local onde
@@ -13,8 +13,7 @@ const app = express(cors()); // serve para segurar quem poderá assesar essa api
  *  
  */
 
-app.use()
-
+app.use(cors())
 app.use(express.json());
 app.use(routes);
 

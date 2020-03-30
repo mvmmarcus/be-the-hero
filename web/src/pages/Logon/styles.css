@@ -1,0 +1,33 @@
+.logon-container {
+    width: 100%; /* esses item são pensados na responsividade */
+    max-width: 1120px; /* esses item são pensados na responsividade */
+    height: 100vh;
+    margin: 0 auto;
+
+    display: flex; /*faz com que os intems fiquem um ao lado do outro*/
+    align-items: center; /*centraliza verticalmente*/
+    justify-content: space-between; /*centraliza horizontalmente*/
+}
+
+.logon-container section.form {
+    width: 100%;
+    max-width: 350px;
+    margin-right: 30px; /* distanciamento da logo */
+}
+
+.logon-container section.form form {
+    margin-top: 100px;
+}
+
+.logon-container section.form form h1 {
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+
+.input-id {
+    margin-top: 32px;
+}
+
+.h1 {
+    margin-top: 100px;
+}
